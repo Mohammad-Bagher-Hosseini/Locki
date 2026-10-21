@@ -1,0 +1,200 @@
+GhostOps Report - source: sample.log
+============================================
+Generated at:    2026-10-21T18:13:37Z
+Valid entries:   5532
+Malformed lines: 468
+
+By level:
+  ERROR 820
+  FATAL 271
+  INFO  3335
+  WARN  1106
+
+By service:
+  auth-service           1106
+  notification-service   1130
+  order-service          1082
+  payment-service        1090
+  user-service           1124
+
+Incidents (42 groups):
+  [critical] db-pool-exhausted @ order-service x63
+    Database connection pool exhausted
+    2026-10-01T01:50:59Z -> 2026-10-06T17:48:56Z
+    e.g. "Database connection pool exhausted and crashed system"
+  [critical] db-pool-exhausted @ user-service x57
+    Database connection pool exhausted
+    2026-10-01T02:19:15Z -> 2026-10-06T17:10:16Z
+    e.g. "Database connection pool exhausted and crashed system"
+  [critical] db-pool-exhausted @ auth-service x52
+    Database connection pool exhausted
+    2026-10-01T00:52:07Z -> 2026-10-06T18:49:45Z
+    e.g. "Database connection pool exhausted and crashed system"
+  [critical] db-pool-exhausted @ notification-service x50
+    Database connection pool exhausted
+    2026-10-01T03:09:48Z -> 2026-10-06T15:21:37Z
+    e.g. "Database connection pool exhausted and crashed system"
+  [critical] db-pool-exhausted @ payment-service x49
+    Database connection pool exhausted
+    2026-10-01T04:39:20Z -> 2026-10-06T14:58:35Z
+    e.g. "Database connection pool exhausted and crashed system"
+  [high] payment-gateway @ payment-service x163
+    Payment gateway failure
+    2026-10-01T00:24:58Z -> 2026-10-06T17:19:29Z
+    e.g. "Payment gateway timeout - transaction aborted"
+  [high] db-connect-timeout @ auth-service x55
+    Database connection timeout
+    2026-10-01T08:20:24Z -> 2026-10-06T14:03:00Z
+    e.g. "Failed to connect to database: timeout after 5000ms"
+  [high] null-pointer @ auth-service x52
+    NullPointerException in controller
+    2026-10-01T04:27:37Z -> 2026-10-06T17:01:53Z
+    e.g. "NullPointerException in controller layer processing request"
+  [high] db-connect-timeout @ order-service x49
+    Database connection timeout
+    2026-10-01T01:46:14Z -> 2026-10-06T16:34:44Z
+    e.g. "Failed to connect to database: timeout after 5000ms"
+  [high] db-connect-timeout @ user-service x47
+    Database connection timeout
+    2026-10-01T01:04:45Z -> 2026-10-06T16:45:17Z
+    e.g. "Failed to connect to database: timeout after 5000ms"
+  [high] null-pointer @ user-service x47
+    NullPointerException in controller
+    2026-10-01T04:47:53Z -> 2026-10-06T12:59:17Z
+    e.g. "NullPointerException in controller layer processing request"
+  [high] payment-gateway @ user-service x44
+    Payment gateway failure
+    2026-10-01T01:00:07Z -> 2026-10-06T16:57:56Z
+    e.g. "Payment gateway returned 502 Bad Gateway"
+  [high] db-connect-timeout @ notification-service x43
+    Database connection timeout
+    2026-10-01T01:51:04Z -> 2026-10-06T16:45:55Z
+    e.g. "Failed to connect to database: timeout after 5000ms"
+  [high] payment-gateway @ order-service x41
+    Payment gateway failure
+    2026-10-01T00:24:09Z -> 2026-10-06T12:15:01Z
+    e.g. "Payment gateway returned 502 Bad Gateway"
+  [high] null-pointer @ notification-service x39
+    NullPointerException in controller
+    2026-10-01T00:44:11Z -> 2026-10-06T12:34:59Z
+    e.g. "NullPointerException in controller layer processing request"
+  [high] sql-syntax-error @ notification-service x39
+    SQL syntax error
+    2026-10-01T12:42:39Z -> 2026-10-06T10:48:52Z
+    e.g. "SQL syntax error while executing query: syntax error at end of input"
+  [high] sql-syntax-error @ order-service x39
+    SQL syntax error
+    2026-10-01T03:29:21Z -> 2026-10-06T13:01:59Z
+    e.g. "SQL syntax error while executing query: syntax error at end of input"
+  [high] null-pointer @ order-service x37
+    NullPointerException in controller
+    2026-10-01T00:21:46Z -> 2026-10-06T14:57:57Z
+    e.g. "NullPointerException in controller layer processing request"
+  [high] sql-syntax-error @ user-service x36
+    SQL syntax error
+    2026-10-01T06:08:24Z -> 2026-10-06T14:47:58Z
+    e.g. "SQL syntax error while executing query: syntax error at end of input"
+  [high] sql-syntax-error @ auth-service x33
+    SQL syntax error
+    2026-10-01T01:52:05Z -> 2026-10-06T14:00:53Z
+    e.g. "SQL syntax error while executing query: syntax error at end of input"
+  [high] payment-gateway @ auth-service x30
+    Payment gateway failure
+    2026-10-01T02:15:44Z -> 2026-10-06T15:42:34Z
+    e.g. "Payment gateway returned 502 Bad Gateway"
+  [high] payment-gateway @ notification-service x26
+    Payment gateway failure
+    2026-10-01T08:49:29Z -> 2026-10-06T17:59:02Z
+    e.g. "Payment gateway returned 502 Bad Gateway"
+  [medium] high-memory @ payment-service x80
+    High memory usage
+    2026-10-01T00:06:02Z -> 2026-10-06T17:08:29Z
+    e.g. "High memory usage detected: 85%"
+  [medium] high-memory @ user-service x66
+    High memory usage
+    2026-10-01T02:39:52Z -> 2026-10-06T17:48:06Z
+    e.g. "High memory usage detected: 85%"
+  [medium] db-pool-threshold @ order-service x61
+    Database connection pool threshold warning
+    2026-10-01T02:41:19Z -> 2026-10-06T10:15:24Z
+    e.g. "Database connection pool reaching threshold (80% utilized)"
+  [medium] db-pool-threshold @ user-service x56
+    Database connection pool threshold warning
+    2026-10-01T04:54:31Z -> 2026-10-06T18:06:14Z
+    e.g. "Database connection pool reaching threshold (80% utilized)"
+  [medium] high-memory @ notification-service x56
+    High memory usage
+    2026-10-01T04:39:14Z -> 2026-10-06T18:04:30Z
+    e.g. "High memory usage detected: 85%"
+  [medium] db-pool-threshold @ notification-service x55
+    Database connection pool threshold warning
+    2026-10-01T02:01:00Z -> 2026-10-06T13:00:10Z
+    e.g. "Database connection pool reaching threshold (80% utilized)"
+  [medium] db-pool-threshold @ payment-service x51
+    Database connection pool threshold warning
+    2026-10-01T05:14:40Z -> 2026-10-06T17:04:12Z
+    e.g. "Database connection pool reaching threshold (80% utilized)"
+  [medium] high-memory @ auth-service x50
+    High memory usage
+    2026-10-01T00:11:31Z -> 2026-10-06T14:32:39Z
+    e.g. "High memory usage detected: 85%"
+  [medium] db-pool-threshold @ auth-service x49
+    Database connection pool threshold warning
+    2026-10-01T00:04:53Z -> 2026-10-06T18:36:10Z
+    e.g. "Database connection pool reaching threshold (80% utilized)"
+  [medium] high-memory @ order-service x46
+    High memory usage
+    2026-10-01T16:53:06Z -> 2026-10-06T17:14:56Z
+    e.g. "High memory usage detected: 85%"
+  [low] deprecated-api @ notification-service x66
+    Deprecated API usage
+    2026-10-01T00:34:33Z -> 2026-10-06T17:16:34Z
+    e.g. "Deprecated API endpoint /api/old/users accessed"
+  [low] rate-limit @ auth-service x58
+    Rate limit approaching
+    2026-10-01T01:11:46Z -> 2026-10-06T06:01:29Z
+    e.g. "Rate limit approaching for client IP 192.168.1.50"
+  [low] rate-limit @ order-service x57
+    Rate limit approaching
+    2026-10-01T00:45:45Z -> 2026-10-06T16:36:15Z
+    e.g. "Rate limit approaching for client IP 192.168.1.50"
+  [low] rate-limit @ user-service x56
+    Rate limit approaching
+    2026-10-01T05:38:32Z -> 2026-10-06T17:12:14Z
+    e.g. "Rate limit approaching for client IP 192.168.1.50"
+  [low] rate-limit @ notification-service x55
+    Rate limit approaching
+    2026-10-01T00:20:21Z -> 2026-10-06T17:26:24Z
+    e.g. "Rate limit approaching for client IP 192.168.1.50"
+  [low] deprecated-api @ user-service x52
+    Deprecated API usage
+    2026-10-01T01:56:54Z -> 2026-10-06T16:25:51Z
+    e.g. "Deprecated API endpoint /api/old/users accessed"
+  [low] deprecated-api @ auth-service x50
+    Deprecated API usage
+    2026-10-01T10:28:29Z -> 2026-10-06T15:44:24Z
+    e.g. "Deprecated API endpoint /api/old/users accessed"
+  [low] rate-limit @ payment-service x50
+    Rate limit approaching
+    2026-10-01T02:12:08Z -> 2026-10-06T15:36:41Z
+    e.g. "Rate limit approaching for client IP 192.168.1.50"
+  [low] deprecated-api @ order-service x46
+    Deprecated API usage
+    2026-10-01T00:55:55Z -> 2026-10-06T16:20:58Z
+    e.g. "Deprecated API endpoint /api/old/users accessed"
+  [low] deprecated-api @ payment-service x46
+    Deprecated API usage
+    2026-10-01T01:43:15Z -> 2026-10-06T17:29:45Z
+    e.g. "Deprecated API endpoint /api/old/users accessed"
+
+Malformed (first 10 of 468):
+  line 10: bad timestamp: 2026-10-16 - "2026-10-16 10:01:12 ERROR [malformed timestamp format]"
+  line 11: bad timestamp: --- - "--- LOG ENTRY START --- [incomplete]"
+  line 34: bad timestamp: garbage - "garbage data stream corrupted packet #98123"
+  line 41: bad timestamp: --- - "--- LOG ENTRY START --- [incomplete]"
+  line 46: bad timestamp: THIS - "THIS IS A COMPLETELY INVALID LINE WITHOUT STRUCTURE"
+  line 83: bad timestamp: 2026-10-16 - "2026-10-16 10:01:12 ERROR [malformed timestamp format]"
+  line 91: bad timestamp: 2026-10-16 - "2026-10-16 10:01:12 ERROR [malformed timestamp format]"
+  line 92: unknown level: INVALID_LEVEL - "2026-10-16T10:00:00Z INVALID_LEVEL auth-service Missing message field"
+  line 93: bad timestamp: --- - "--- LOG ENTRY START --- [incomplete]"
+  line 103: bad timestamp: 2026-10-16 - "2026-10-16 10:01:12 ERROR [malformed timestamp format]"

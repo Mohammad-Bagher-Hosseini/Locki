@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "source": "sample.log",
+    "generated_at": "2026-10-21T18:13:37Z",
+    "valid_entries": 5532,
+    "malformed_lines": 468
+  },
+  "stats": {
+    "total_valid": 5532,
+    "malformed": 468,
+    "by_level": {
+      "ERROR": 820,
+      "FATAL": 271,
+      "INFO": 3335,
+      "WARN": 1106
+    },
+    "by_service": {
+      "auth-service": 1106,
+      "notification-service": 1130,
+      "order-service": 1082,
+      "payment-service": 1090,
+      "user-service": 1124
+    }
+  },
+  "incidents": [
+    {
+      "id": "db-pool-exhausted",
+      "title": "Database connection pool exhausted",
+      "severity": "critical",
+      "service": "order-service",
+      "count": 63,
+      "first_seen": "2026-10-01T01:50:59Z",
+      "last_seen": "2026-10-06T17:48:56Z",
+      "samples": [
+        "Database connection pool exhausted and crashed system"
+      ]
+    },
+    {
+      "id": "db-pool-exhausted",
+      "title": "Database connection pool exhausted",
+      "severity": "critical",
+      "service": "user-service",
+      "count": 57,
+      "first_seen": "2026-10-01T02:19:15Z",
+      "last_seen": "2026-10-06T17:10:16Z",
+      "samples": [
+        "Database connection pool exhausted and crashed system"
+      ]
+    },
+    {
+      "id": "db-pool-exhausted",
+      "title": "Database connection pool exhausted",
+      "severity": "critical",
+      "service": "auth-service",
+      "count": 52,
+      "first_seen": "2026-10-01T00:52:07Z",
+      "last_seen": "2026-10-06T18:49:45Z",
+      "samples": [
+        "Database connection pool exhausted and crashed system"
+      ]
+    },
+    {
+      "id": "db-pool-exhausted",
+      "title": "Database connection pool exhausted",
+      "severity": "critical",
+      "service": "notification-service",
+      "count": 50,
+      "first_seen": "2026-10-01T03:09:48Z",
+      "last_seen": "2026-10-06T15:21:37Z",
+      "samples": [
+        "Database connection pool exhausted and crashed system"
+      ]
+    },
+    {
+      "id": "db-pool-exhausted",
+      "title": "Database connection pool exhausted",
+      "severity": "critical",
+      "service": "payment-service",
+      "count": 49,
+      "first_seen": "2026-10-01T04:39:20Z",
+      "last_seen": "2026-10-06T14:58:35Z",
+      "samples": [
+        "Database connection pool exhausted and crashed system"
+      ]
+    },
+    {
+      "id": "payment-gateway",
+      "title": "Payment gateway failure",
+      "severity": "high",
+      "service": "payment-service",
+      "count": 163,
+      "first_seen": "2026-10-01T00:24:58Z",
+      "last_seen": "2026-10-06T17:19:29Z",
+      "samples": [
+        "Payment gateway timeout - transaction aborted"
+      ]
+    },
+    {
+      "id": "db-connect-timeout",
+      "title": "Database connection timeout",
+      "severity": "high",
+      "service": "auth-service",
+      "count": 55,
+      "first_seen": "2026-10-01T08:20:24Z",
+      "last_seen": "2026-10-06T14:03:00Z",
+      "samples": [
+        "Failed to connect to database: timeout after 5000ms"
+      ]
+    },
+    {
+      "id": "null-pointer",
+      "title": "NullPointerException in controller",
+      "severity": "high",
+      "service": "auth-service",
+      "count": 52,
+      "first_seen": "2026-10-01T04:27:37Z",
+      "last_seen": "2026-10-06T17:01:53Z",
+      "samples": [
+        "NullPointerException in controller layer processing request"
+      ]
+    },
+    {
+      "id": "db-connect-timeout",
+      "title": "Database connection timeout",
+      "severity": "high",
+      "service": "order-service",
+      "count": 49,
+      "first_seen": "2026-10-01T01:46:14Z",
+      "last_seen": "2026-10-06T16:34:44Z",
+      "samples": [
+        "Failed to connect to database: timeout after 5000ms"
+      ]
+    },
+    {
+      "id": "db-connect-timeout",
+      "title": "Database connection timeout",
+      "severity": "high",
+      "service": "user-service",
+      "count": 47,
+      "first_seen": "2026-10-01T01:04:45Z",
+      "last_seen": "2026-10-06T16:45:17Z",
+      "samples": [
+        "Failed to connect to database: timeout after 5000ms"
+      ]
+    },
+    {
+      "id": "null-pointer",
+      "title": "NullPointerException in controller",
+      "severity": "high",
+      "service": "user-service",
+      "count": 47,
+      "first_seen": "2026-10-01T04:47:53Z",
+      "last_seen": "2026-10-06T12:59:17Z",
+      "samples": [
+        "NullPointerException in controller layer processing request"
+      ]
+    },
+    {
+      "id": "payment-gateway",
+      "title": "Payment gateway failure",
+      "severity": "high",
+      "service": "user-service",
+      "count": 44,
+      "first_seen": "2026-10-01T01:00:07Z",
+      "last_seen": "2026-10-06T16:57:56Z",
+      "samples": [
+        "Payment gateway returned 502 Bad Gateway"
+      ]
+    },
+    {
+      "id": "db-connect-timeout",
+      "title": "Database connection timeout",
+      "severity": "high",
+      "service": "notification-service",
+      "count": 43,
+      "first_seen": "2026-10-01T01:51:04Z",
+      "last_seen": "2026-10-06T16:45:55Z",
+      "samples": [
+        "Failed to connect to database: timeout after 5000ms"
+      ]
+    },
+    {
+      "id": "payment-gateway",
+      "title": "Payment gateway failure",
+      "severity": "high",
+      "service": "order-service",
+      "count": 41,
+      "first_seen": "2026-10-01T00:24:09Z",
+      "last_seen": "2026-10-06T12:15:01Z",
+      "samples": [
+        "Payment gateway returned 502 Bad Gateway"
+      ]
+    },
+    {
+      "id": "null-pointer",
+      "title": "NullPointerException in controller",
+      "severity": "high",
+      "service": "notification-service",
+      "count": 39,
+      "first_seen": "2026-10-01T00:44:11Z",
+      "last_seen": "2026-10-06T12:34:59Z",
+      "samples": [
+        "NullPointerException in controller layer processing request"
+      ]
+    },
+    {
+      "id": "sql-syntax-error",
+      "title": "SQL syntax error",
+      "severity": "high",
+      "service": "notification-service",
+      "count": 39,
+      "first_seen": "2026-10-01T12:42:39Z",
+      "last_seen": "2026-10-06T10:48:52Z",
+      "samples": [
+        "SQL syntax error while executing query: syntax error at end of input"
+      ]
+    },
+    {
+      "id": "sql-syntax-error",
+      "title": "SQL syntax error",
+      "severity": "high",
+      "service": "order-service",
+      "count": 39,
+      "first_seen": "2026-10-01T03:29:21Z",
+      "last_seen": "2026-10-06T13:01:59Z",
+      "samples": [
+        "SQL syntax error while executing query: syntax error at end of input"
+      ]
+    },
+    {
+      "id": "null-pointer",
+      "title": "NullPointerException in controller",
+      "severity": "high",
+      "service": "order-service",
+      "count": 37,
+      "first_seen": "2026-10-01T00:21:46Z",
+      "last_seen": "2026-10-06T14:57:57Z",
+      "samples": [
+        "NullPointerException in controller layer processing request"
+      ]
+    },
+    {
+      "id": "sql-syntax-error",
+      "title": "SQL syntax error",
+      "severity": "high",
+      "service": "user-service",
+      "count": 36,
+      "first_seen": "2026-10-01T06:08:24Z",
+      "last_seen": "2026-10-06T14:47:58Z",
+      "samples": [
+        "SQL syntax error while executing query: syntax error at end of input"
+      ]
+    },
+    {
+      "id": "sql-syntax-error",
+      "title": "SQL syntax error",
+      "severity": "high",
+      "service": "auth-service",
+      "count": 33,
+      "first_seen": "2026-10-01T01:52:05Z",
+      "last_seen": "2026-10-06T14:00:53Z",
+      "samples": [
+        "SQL syntax error while executing query: syntax error at end of input"
+      ]
+    },
+    {
+      "id": "payment-gateway",
+      "title": "Payment gateway failure",
+      "severity": "high",
+      "service": "auth-service",
+      "count": 30,
+      "first_seen": "2026-10-01T02:15:44Z",
+      "last_seen": "2026-10-06T15:42:34Z",
+      "samples": [
+        "Payment gateway returned 502 Bad Gateway"
+      ]
+    },
+    {
+      "id": "payment-gateway",
+      "title": "Payment gateway failure",
+      "severity": "high",
+      "service": "notification-service",
+      "count": 26,
+      "first_seen": "2026-10-01T08:49:29Z",
+      "last_seen": "2026-10-06T17:59:02Z",
+      "samples": [
+        "Payment gateway returned 502 Bad Gateway"
+      ]
+    },
+    {
+      "id": "high-memory",
+      "title": "High memory usage",
+      "severity": "medium",
+      "service": "payment-service",
+      "count": 80,
+      "first_seen": "2026-10-01T00:06:02Z",
+      "last_seen": "2026-10-06T17:08:29Z",
+      "samples": [
+        "High memory usage detected: 85%"
+      ]
+    },
+    {
+      "id": "high-memory",
+      "title": "High memory usage",
+      "severity": "medium",
+      "service": "user-service",
+      "count": 66,
+      "first_seen": "2026-10-01T02:39:52Z",
+      "last_seen": "2026-10-06T17:48:06Z",
+      "samples": [
+        "High memory usage detected: 85%"
+      ]
+    },
+    {
+      "id": "db-pool-threshold",
+      "title": "Database connection pool threshold warning",
+      "severity": "medium",
+      "service": "order-service",
+      "count": 61,
+      "first_seen": "2026-10-01T02:41:19Z",
+      "last_seen": "2026-10-06T10:15:24Z",
+      "samples": [
+        "Database connection pool reaching threshold (80% utilized)"
+      ]
+    },
+    {
+      "id": "db-pool-threshold",
+      "title": "Database connection pool threshold warning",
+      "severity": "medium",
+      "service": "user-service",
+      "count": 56,
+      "first_seen": "2026-10-01T04:54:31Z",
+      "last_seen": "2026-10-06T18:06:14Z",
+      "samples": [
+        "Database connection pool reaching threshold (80% utilized)"
+      ]
+    },
+    {
+      "id": "high-memory",
+      "title": "High memory usage",
+      "severity": "medium",
+      "service": "notification-service",
+      "count": 56,
+      "first_seen": "2026-10-01T04:39:14Z",
+      "last_seen": "2026-10-06T18:04:30Z",
+      "samples": [
+        "High memory usage detected: 85%"
+      ]
+    },
+    {
+      "id": "db-pool-threshold",
+      "title": "Database connection pool threshold warning",
+      "severity": "medium",
+      "service": "notification-service",
+      "count": 55,
+      "first_seen": "2026-10-01T02:01:00Z",
+      "last_seen": "2026-10-06T13:00:10Z",
+      "samples": [
+        "Database connection pool reaching threshold (80% utilized)"
+      ]
+    },
+    {
+      "id": "db-pool-threshold",
+      "title": "Database connection pool threshold warning",
+      "severity": "medium",
+      "service": "payment-service",
+      "count": 51,
+      "first_seen": "2026-10-01T05:14:40Z",
+      "last_seen": "2026-10-06T17:04:12Z",
+      "samples": [
+        "Database connection pool reaching threshold (80% utilized)"
+      ]
+    },
+    {
+      "id": "high-memory",
+      "title": "High memory usage",
+      "severity": "medium",
+      "service": "auth-service",
+      "count": 50,
+      "first_seen": "2026-10-01T00:11:31Z",
+      "last_seen": "2026-10-06T14:32:39Z",
+      "samples": [
+        "High memory usage detected: 85%"
+      ]
+    },
+    {
+      "id": "db-pool-threshold",
+      "title": "Database connection pool threshold warning",
+      "severity": "medium",
+      "service": "auth-service",
+      "count": 49,
+      "first_seen": "2026-10-01T00:04:53Z",
+      "last_seen": "2026-10-06T18:36:10Z",
+      "samples": [
+        "Database connection pool reaching threshold (80% utilized)"
+      ]
+    },
+    {
+      "id": "high-memory",
+      "title": "High memory usage",
+      "severity": "medium",
+      "service": "order-service",
+      "count": 46,
+      "first_seen": "2026-10-01T16:53:06Z",
+      "last_seen": "2026-10-06T17:14:56Z",
+      "samples": [
+        "High memory usage detected: 85%"
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "title": "Deprecated API usage",
+      "severity": "low",
+      "service": "notification-service",
+      "count": 66,
+      "first_seen": "2026-10-01T00:34:33Z",
+      "last_seen": "2026-10-06T17:16:34Z",
+      "samples": [
+        "Deprecated API endpoint /api/old/users accessed"
+      ]
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit approaching",
+      "severity": "low",
+      "service": "auth-service",
+      "count": 58,
+      "first_seen": "2026-10-01T01:11:46Z",
+      "last_seen": "2026-10-06T06:01:29Z",
+      "samples": [
+        "Rate limit approaching for client IP 192.168.1.50"
+      ]
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit approaching",
+      "severity": "low",
+      "service": "order-service",
+      "count": 57,
+      "first_seen": "2026-10-01T00:45:45Z",
+      "last_seen": "2026-10-06T16:36:15Z",
+      "samples": [
+        "Rate limit approaching for client IP 192.168.1.50"
+      ]
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit approaching",
+      "severity": "low",
+      "service": "user-service",
+      "count": 56,
+      "first_seen": "2026-10-01T05:38:32Z",
+      "last_seen": "2026-10-06T17:12:14Z",
+      "samples": [
+        "Rate limit approaching for client IP 192.168.1.50"
+      ]
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit approaching",
+      "severity": "low",
+      "service": "notification-service",
+      "count": 55,
+      "first_seen": "2026-10-01T00:20:21Z",
+      "last_seen": "2026-10-06T17:26:24Z",
+      "samples": [
+        "Rate limit approaching for client IP 192.168.1.50"
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "title": "Deprecated API usage",
+      "severity": "low",
+      "service": "user-service",
+      "count": 52,
+      "first_seen": "2026-10-01T01:56:54Z",
+      "last_seen": "2026-10-06T16:25:51Z",
+      "samples": [
+        "Deprecated API endpoint /api/old/users accessed"
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "title": "Deprecated API usage",
+      "severity": "low",
+      "service": "auth-service",
+      "count": 50,
+      "first_seen": "2026-10-01T10:28:29Z",
+      "last_seen": "2026-10-06T15:44:24Z",
+      "samples": [
+        "Deprecated API endpoint /api/old/users accessed"
+      ]
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit approaching",
+      "severity": "low",
+      "service": "payment-service",
+      "count": 50,
+      "first_seen": "2026-10-01T02:12:08Z",
+      "last_seen": "2026-10-06T15:36:41Z",
+      "samples": [
+        "Rate limit approaching for client IP 192.168.1.50"
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "title": "Deprecated API usage",
+      "severity": "low",
+      "service": "order-service",
+      "count": 46,
+      "first_seen": "2026-10-01T00:55:55Z",
+      "last_seen": "2026-10-06T16:20:58Z",
+      "samples": [
+        "Deprecated API endpoint /api/old/users accessed"
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "title": "Deprecated API usage",
+      "severity": "low",
+      "service": "payment-service",
+      "count": 46,
+      "first_seen": "2026-10-01T01:43:15Z",
+      "last_seen": "2026-10-06T17:29:45Z",
+      "samples": [
+        "Deprecated API endpoint /api/old/users accessed"
+      ]
+    }
+  ],
+  "malformed_samples": [
+    {
+      "line": 10,
+      "content": "2026-10-16 10:01:12 ERROR [malformed timestamp format]",
+      "reason": "bad timestamp: 2026-10-16"
+    },
+    {
+      "line": 11,
+      "content": "--- LOG ENTRY START --- [incomplete]",
+      "reason": "bad timestamp: ---"
+    },
+    {
+      "line": 34,
+      "content": "garbage data stream corrupted packet #98123",
+      "reason": "bad timestamp: garbage"
+    },
+    {
+      "line": 41,
+      "content": "--- LOG ENTRY START --- [incomplete]",
+      "reason": "bad timestamp: ---"
+    },
+    {
+      "line": 46,
+      "content": "THIS IS A COMPLETELY INVALID LINE WITHOUT STRUCTURE",
+      "reason": "bad timestamp: THIS"
+    },
+    {
+      "line": 83,
+      "content": "2026-10-16 10:01:12 ERROR [malformed timestamp format]",
+      "reason": "bad timestamp: 2026-10-16"
+    },
+    {
+      "line": 91,
+      "content": "2026-10-16 10:01:12 ERROR [malformed timestamp format]",
+      "reason": "bad timestamp: 2026-10-16"
+    },
+    {
+      "line": 92,
+      "content": "2026-10-16T10:00:00Z INVALID_LEVEL auth-service Missing message field",
+      "reason": "unknown level: INVALID_LEVEL"
+    },
+    {
+      "line": 93,
+      "content": "--- LOG ENTRY START --- [incomplete]",
+      "reason": "bad timestamp: ---"
+    },
+    {
+      "line": 103,
+      "content": "2026-10-16 10:01:12 ERROR [malformed timestamp format]",
+      "reason": "bad timestamp: 2026-10-16"
+    }
+  ]
+}
